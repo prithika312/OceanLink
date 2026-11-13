@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>OceanLink | Website Under Maintenance</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+            background: #063B52;
+        }
+
+        /* ========================================
+           OCEANLINK MAINTENANCE PAGE
+        ======================================== */
+
+        .maintenance-page {
+            position: relative;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(3, 35, 55, 0.92),
+                    rgba(0, 105, 125, 0.78)
+                ),
+                linear-gradient(
+                    to bottom,
+                    #07545A,
+                    #087E91,
+                    #063B52
+                );
+        }
+
+        /* Decorative ocean waves */
+
+        .wave {
+            position: absolute;
+            left: -5%;
+            width: 110%;
+            height: 180px;
+
+            border-radius: 50% 50% 0 0;
+
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .wave-one {
+            bottom: -110px;
+            transform: rotate(-3deg);
+        }
+
+        .wave-two {
+            bottom: -145px;
+            background: rgba(255, 255, 255, 0.05);
+            transform: rotate(4deg);
+        }
+
+        /* Main content */
+
+        .maintenance-content {
+            position: relative;
+            z-index: 5;
+
+            width: min(90%, 850px);
+
+            padding: 55px 45px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.12);
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
+
+            border-radius: 24px;
+
+            backdrop-filter: blur(10px);
+
+            box-shadow:
+                0 20px 50px rgba(0, 25, 40, 0.35);
+        }
+
+        /* OceanLink branding */
+
+        .maintenance-logo {
+            display: inline-block;
+
+            margin-bottom: 25px;
+
+            padding: 10px 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.35);
+
+            border-radius: 50px;
+
+            color: #FFFFFF;
+
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .maintenance-label {
+            margin-bottom: 14px;
+
+            color: #A9EEF0;
+
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .maintenance-content h1 {
+            margin-bottom: 20px;
+
+            color: #FFFFFF;
+
+            font-size: clamp(36px, 6vw, 64px);
+            line-height: 1.1;
+        }
+
+        .maintenance-content h1 span {
+            color: #7DE1E4;
+        }
+
+        .maintenance-message {
+            max-width: 650px;
+
+            margin: 0 auto;
+
+            color: rgba(255, 255, 255, 0.92);
+
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Status message */
+
+        .maintenance-status {
+            display: inline-block;
+
+            margin-top: 32px;
+            padding: 13px 24px;
+
+            background: rgba(255, 255, 255, 0.14);
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
+
+            border-radius: 50px;
+
+            color: #FFFFFF;
+
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .status-dot {
+            display: inline-block;
+
+            width: 9px;
+            height: 9px;
+
+            margin-right: 9px;
+
+            border-radius: 50%;
+
+            background: #7DE1E4;
+        }
+
+        /* Footer */
+
+        .maintenance-footer {
+            margin-top: 40px;
+
+            color: rgba(255, 255, 255, 0.65);
+
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            .maintenance-content {
+                width: 92%;
+
+                padding: 40px 24px;
+
+                border-radius: 20px;
+            }
+
+            .maintenance-logo {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+
+            .maintenance-content h1 {
+                font-size: 38px;
+            }
+
+            .maintenance-message {
+                font-size: 16px;
+            }
+
+            .maintenance-status {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="maintenance-page">
+
+        <!-- Decorative ocean waves -->
+        <div class="wave wave-one"></div>
+        <div class="wave wave-two"></div>
+
+
+        <section class="maintenance-content">
+
+            <div class="maintenance-logo">
+                OceanLink Mauritius
+            </div>
+
+            <p class="maintenance-label">
+                Website Temporarily Unavailable
+            </p>
+
+            <h1>
+                We're making the ocean
+                <span>even better.</span>
+            </h1>
+
+            <p class="maintenance-message">
+                OceanLink is currently undergoing maintenance
+                and improvements to provide you with a better
+                experience.
+                <br><br>
+                We are working behind the scenes and will be
+                back online soon.
+            </p>
+
+            <div class="maintenance-status">
+                <span class="status-dot"></span>
+                Website Under Maintenance
+            </div>
+
+            <p class="maintenance-footer">
+                Thank you for your patience and for supporting
+                ocean awareness, environmental education and
+                marine conservation in Mauritius.
+                <br><br>
+                © 2026 OceanLink Mauritius. All rights reserved.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
