@@ -6686,3 +6686,25 @@ button:hover,
     font-size: 13px;
     word-break: break-word;
 }
+/* ========================================
+   MOBILE NAVIGATION
+======================================== */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        height: auto;
+        min-height: 76px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 8px 10px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+}
