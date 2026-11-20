@@ -959,7 +959,7 @@ transform: translateY(-40px);
 @media (max-width: 600px) {
 
     .nav-button {
-        display: none;
+       display: inline-block;
     }
 
     .section {
